@@ -27,3 +27,19 @@ me.hobbies = hobbies;
 //type coercion  - ændre typer så de kan sammenlignes.   det er filosofien bag jaascript at coercion er muligt. det er ikke muligt i Java e.g.
 // we ALWAYs use strict equality checks:
 // === and !==
+
+
+// Strings:
+
+const StringOne  = "this is one ''''''' way of defining strings"
+const StringTwo= "this is one " +way+ " way of defining strings";
+const StringTree = "this is one ${} way of defining strings"
+
+`multi line String
+and here`   
+
+  // key: vlaue pair   i json skal keys have quotation marks, det skal det ikke i javascript.
+const kea = {
+    "address": "Guldbergsgade",
+    "studentsInBuilding": 204
+    }
