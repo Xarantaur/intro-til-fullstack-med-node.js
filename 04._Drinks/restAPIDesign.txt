@@ -1,0 +1,7 @@
+HTTP Method	Endpoints	Description
+GET	    /drinks	        Get all Drinks
+GET	    /drinks/{id} 	Get a Drink by ID
+POST    /drinks	        Create a new Drink
+PUT	    /drinks/{id}	Update the entire Drinks resource
+PATCH	/drinks/{id}	Update part of the Drinks resource
+DELETE	/drinks/{id}	Delete a Drink by ID

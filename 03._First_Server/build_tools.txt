@@ -1,0 +1,2 @@
+package.json entry point til project. 
+package.json holder depenedencies 

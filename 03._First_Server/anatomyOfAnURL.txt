@@ -1,0 +1,10 @@
+
+https://www.google.dk/search?q=test&sca_esv=3cb7e1ef2cffde3a&sxsrf=ACQVn0_h3iCg0N5kUBv9KjjHo4HCKBCf4w%3A1708074369165&source=hp&ei=gSXPZdjdB_yJxc8P-9yDiAI&iflsig=ANes7DEAAAAAZc8zkfoJeSvIWjMbxSLAwWGfDEAIK96U&ved=0ahUKEwiYopbwwK-EAxX8RPEDHXvuACEQ4dUDCA0&uact=5&oq=test&gs_lp=Egdnd3Mtd2l6IgR0ZXN0MgsQABiABBiKBRiRAjIFEAAYgAQyBRAAGIAEMgUQABiABDILEC4YgAQYxwEYrwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjLJFCADFi0I3ACeACQAQCYAVugAY4DqgEBNbgBA8gBAPgBAagCCsICBxAjGOoCGCfCAg0QLhjHARivARjqAhgnwgIKECMYgAQYigUYJ8ICBRAuGIAEwgILEC4YgAQYxwEY0QPCAggQLhiABBjUAg&sclient=gws-wiz
+
+protocol: HTTPS 
+domain : google
+sub-domain: www
+top-level-domain: com 
+endpoint: /search?q=test
+query string: ?q=test
+quest parameters: hl=en & q=test
