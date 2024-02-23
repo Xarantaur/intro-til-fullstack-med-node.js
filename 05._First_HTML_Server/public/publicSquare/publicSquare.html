@@ -7,5 +7,15 @@
   </head>
   <body>
     <h1>This is the public Square#</h1>
+    <h1>known people</h1>
+    <h3 id="known-people-amount"></h3>
+    <script>
+        const knownPeopleAmount = document.getElementById("known-people-amount")
+
+        
+        fetch("/knownpeople")
+        .then((response) => response.json())
+        .then((result) => knownPeopleAmount.textContent = result.data);
+    </script>
   </body>
 </html>

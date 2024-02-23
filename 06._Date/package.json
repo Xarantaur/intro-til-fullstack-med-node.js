@@ -1,0 +1,27 @@
+{
+  "name": "date",
+  "version": "0.0.1",
+  "description": "working with dates in javascript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xarantaur/intro-til-fullstack-med-node.js.git"
+  },
+  "keywords": [
+    "date",
+    "javascript",
+    "express"
+  ],
+  "author": "Lars Hansen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xarantaur/intro-til-fullstack-med-node.js/issues"
+  },
+  "homepage": "https://github.com/Xarantaur/intro-til-fullstack-med-node.js#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
