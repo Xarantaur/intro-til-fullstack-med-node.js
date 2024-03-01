@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeToDeploy</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(to right, #ff0000, #ff8c00, #ffee00, #00ff00, #0000ff, #4b0082, #9400d3);
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+
+      .container {
+        width: auto;
+        padding: 20em;
+        text-align: center;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        overflow: hidden;
+        border: 4px outset #f5f5f5;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+      span {
+      display: block; 
+      margin-bottom: 10px; 
+      border: 4px outset #f5f5f5;
+      background-color: #f5f5f5;
+    }
+
+    button {
+      margin-top: 10px;
+      margin: 0 auto;
+      display: block;
+      border: 4px outset #f5f5f5;
+    }
+    button:hover{
+      background-color: #00ff00;
+      border: outset #00ff00;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Navn</th>
+            <th>tid siden fødsels</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Luna Hansen</td>
+            <td id="luna-time">indsæt count her</td>
+          </tr>
+          <tr>
+            <td>Lars Hansen</td>
+            <td id="lars-time">indsæt count her</td>
+          </tr>
+          <tr>
+            <td>Nanna Boding</td>
+            <td id="nanna-time">indsæt count her</td>
+          </tr>
+        </tbody>
+      </table>
+    
+  </br>
+</br>
+<span>vi har regnet estimeret tid ved død tidspunkt for hver person, vil du se?</span>
+</br>
+<button id="totallyNotARedirectButton">Show Me!!</button>
+</div>
+    <script>
+
+      document.getElementById('totallyNotARedirectButton').addEventListener('click', function() {
+        window.location.href = 'https://bit.ly/3BlS71b'
+      })
+      function updateTable() {
+        const dates = [new Date("2023-03-19"), new Date("1992-12-16"), new Date("1992-10-24")];
+
+        const currentDate = new Date();
+
+        dates.forEach((date, index) => {
+          const timelapsed = currentDate - date;
+          const seconds = Math.floor(timelapsed / 1000);
+          const minutes = Math.floor(seconds / 60);
+          const hours = Math.floor(minutes / 60);
+          const days = Math.floor(hours / 24);
+
+          const timeString = `${days} dage, ${hours % 24} timer, ${minutes % 60} minutter, ${
+            seconds % 60
+          } sekunder`;
+
+          const times = ["luna-time", "lars-time", "nanna-time"][index];
+          document.getElementById(times).textContent = timeString;
+        });
+      }
+      setInterval(updateTable, 1000);
+    </script>
+  </body>
+</html>
