@@ -8,3 +8,6 @@ top-level-domain: com
 endpoint: /search?q=test
 query string: ?q=test
 quest parameters: hl=en & q=test
+
+
+query string = dynamisk mændge variabler 

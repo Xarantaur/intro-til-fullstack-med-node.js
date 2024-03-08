@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="./homepage.css"> -->
+    <link rel="stylesheet" href="./homepage/homepage.css"></link>
     <style>
       h1 {
         color: red;
@@ -26,6 +26,14 @@
 
     <a href="/publicsquare">Public Square</a>  <!--href går over på publicsquare-->
 
+
+    <script>
+
+      // assignment redrect dynamically to public square
+     setTimeout(() => {window.location.href = "/publicSquare"}, 3000) 
+    
+
+    </script>
     <script>
       const nameInput = document.getElementById("name-input");
       const greetingH2 = document.getElementById("greeting-text");
@@ -41,6 +49,6 @@
       }
       // lave en request to greeting and console log the greeting
     </script>
-    <!-- <script src="./homepage.js"></script> -->
+    <script src="./homepage/homepage.js"></script>
   </body>
 </html>
