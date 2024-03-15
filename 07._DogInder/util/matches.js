@@ -6,7 +6,7 @@ console.log(fakerEN_IN.person.bio());
 /* console.log(fakerEN_IN.person.location.city()) */
 
 export default async function getMatches(numberOfMatches = 5) {
-  console.log("matching...");
+
   const promises = [];
   for (let i = 0; i <= numberOfMatches; i++) {
     const promise = fetch("https://dog.ceo/api/breeds/image/random").then((response) => response.json());
