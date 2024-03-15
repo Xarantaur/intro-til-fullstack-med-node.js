@@ -38,7 +38,7 @@ function someOtherScope( ){
     let someValue =  true;
     // lexical scope:
     {
-        let someValue = false;
+        let someValue = false;  
     }
 
     console.log(someValue);
@@ -52,4 +52,4 @@ function someOtherScope( ){
  }
  
 
-console.log(totalGlobalVariable)
+/* console.log(totalGlobalVariable) */

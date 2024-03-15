@@ -4,8 +4,12 @@ const app = express();
 
 app.use(express.static("public"));
 
-import path from "path";
 import getMatches from "./util/matches.js";
+
+import { homepagePage, matchesPage, contactPage } from "./util/readPages.js";
+
+import { readPage, renderPage } from "./util/templatingEngine.js";
+
 
 /* console.log(__dirname); */ // __dirname virker ikke længere fordi vi bruger module i dependencies, den vil have en abosulute path
 // istedet for kan vi importere path :
@@ -14,15 +18,19 @@ import getMatches from "./util/matches.js";
 // ================HTML=========================
 
 app.get("/", (req, res) => {
-  res.sendFile(path.resolve("public/pages/homepage/homepage.html"));
+  res.send(homepagePage);
 });
 
 app.get("/matches", (req, res) => {
-  res.sendFile(path.resolve("public/pages/matches/matches.html"));
+  res.send(matchesPage);
 });
 
 app.get("/contact", (req, res) => {
-  res.sendFile(path.resolve("public/pages/contact/contact.html"));
+  res.send(contactPage);
+});
+
+app.get("/page", (req, res) => {
+  res.send("<div>sdadasd</div>");   // udnyt til serverside rendering.
 });
 
 // ==================API ====================
