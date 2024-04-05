@@ -22,6 +22,12 @@ app.use(matchesRouter)
 import pagesRouter from "./routers/pagesRouter.js"
 app.use(pagesRouter)
 
+import contactRouter from "./routers/contactRouter.js";
+app.use(contactRouter)
+
+// så vi kan læse form data : parser data. 
+app.use(express.urlencoded({ extended: true }))
+
 
 /* app.get("/", (req, res) => {
   res.send(homepagePage);
@@ -46,6 +52,8 @@ app.get("/page", (req, res) => {
   const matches = await getMatches();
   res.send({ data: matches });
 }); */
+console.log(process.env.PORT)
+const PORT = process.env.PORT ?? 8080;
+/* app.listen(PORT, () => console.log("server is running on port: ", PORT)); */
+const server = app.listen(PORT, () => console.log("server is running on port: ", server.address().port));
 
-const PORT = 8080;
-app.listen(PORT, () => console.log("server is running on port: ", PORT));

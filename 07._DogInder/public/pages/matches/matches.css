@@ -10,6 +10,6 @@
   object-fit: contain;
   width: auto;
 }
-.body {
+body {
   background-color: red;
 }

@@ -23,8 +23,9 @@ const getRandomIntArrowFunction = (min, max) => {
 const getRandomIntArrowFunctionOneLiner = (min, max) => Math.floor(Math.random() * (max + 1 - min) + min);
 
 
-                                // string, Callback function    // hvad er en callback function : programmet kan udføre andet kode i mens en callback function kaldes. Async.
-                                                                // det er en funktion der bliver givet med som argument i en anden funktion. 
+                                // string, Callback function 
+ // hvad er en callback function : programmet kan udføre andet kode i mens en callback function kaldes. Async.
+  // det er en funktion der bliver givet med som argument i en anden funktion. 
 function genericActionPerformer(name, genericAction){
     return genericAction(name);
 }
