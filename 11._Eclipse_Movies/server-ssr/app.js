@@ -28,7 +28,6 @@ app.use(session({
   saveUninitialized: false,
   cookie: { secure: false }
 }));
-
 import moviesRouter from "./routers/moviesRouter.js";
 app.use(moviesRouter);
 import customersRouter from "./routers/customersRouter.js";

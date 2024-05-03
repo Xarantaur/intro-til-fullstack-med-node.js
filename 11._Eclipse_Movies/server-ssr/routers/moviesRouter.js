@@ -9,5 +9,5 @@ const eclipseMovies = [
 router.get("/api/movies", (req, res) => {
     res.send({ data: eclipseMovies });
 });
-
+console.log(process.env.SESSION_SECRET)
 export default router;

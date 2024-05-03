@@ -21,7 +21,7 @@ app.use(
     cookie: { secure: false },
   })
 );
-
+console.log(process.env.SESSION_SECRET)
 import helmet from "helmet";
 app.use(helmet());
 
